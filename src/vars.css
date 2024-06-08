@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 :root{
     /*colors*/
     --color-text: #fff;
-    --color-primary: #576cbc;
-    --color-secondary: #19376d;
-    --colar-dark: #0b2447;
-    --color-bg: #04152d;
+    --color-primary: #a4dd42;
+    --color-bg: #6E6E6E;
+    --color-bg2: #383838; 
   
     /*Fonts*/
-    --font-roboto: "Roboto"
-  
+    --font:"Montserrat";
+    --font2:"Poppins";
+
+    /*box shadow*/
+    --box1: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
   }

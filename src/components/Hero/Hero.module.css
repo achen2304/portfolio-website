@@ -1,0 +1,99 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 49px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0; 
+  font-family: var(--font);
+  color: var(--color-text); 
+}
+
+.subtitle {
+  font-size: 35px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 20px; 
+  font-family: var(--font);
+  color: var(--color-primary); 
+  position: relative;
+}
+
+.subtitle::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: var(--color-bg2);
+    margin: 10px 0 0 0;
+}
+
+.description {
+  font-size: 20px;
+  font-family: var(--font2);
+  margin-bottom: 20px;
+}
+
+.contactBtn {
+  text-decoration: none;
+  color: var(--color-text);
+  border-radius: 35px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px 26px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: var(--color-primary);
+  background: linear-gradient(
+    270deg,
+    rgba(58, 83, 15) 0%,
+    rgb(137, 240, 15) 100%
+  )
+}
+
+.heroImg {
+  width: 100%;
+  display: block;
+  z-index: 1;
+  padding-left: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    align-items: center;
+    text-align: center;
+  }
+  .subtitle::after {
+    width: 250px;
+    margin: 10px auto 0;
+}
+
+  .heroImg {
+    width: 100%;
+  }
+  .title{
+    margin-top: 10px;
+  }
+}
