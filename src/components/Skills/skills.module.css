@@ -1,0 +1,57 @@
+@import "../../vars.css";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 49px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--color-bg2);
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.title {
+    margin-bottom: 10px;
+    color: var(--color-text);
+}
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Increased gap for better spacing */
+}
+
+.img-box {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secondary);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.img-box img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.subtitle {
+    color: var(--color-text);
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+}

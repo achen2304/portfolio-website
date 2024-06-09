@@ -4,9 +4,10 @@
 :root{
     /*colors*/
     --color-text: #fff;
-    --color-primary: #a4dd42;
-    --color-bg: #6E6E6E;
-    --color-bg2: #383838; 
+    --color-primary: #a4dd42; /*Big buttons color*/
+    --color-secondary: green; /* surrounds the imgs */
+    --color-bg: #6E6E6E; /*Main Background*/
+    --color-bg2: #383838; /*Secondary Background*/
   
     /*Fonts*/
     --font:"Montserrat";
