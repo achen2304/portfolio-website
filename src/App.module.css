@@ -8,3 +8,7 @@
   flex-direction: column;
   padding: 40px; 
 }
+
+html {
+  scroll-behavior: smooth;
+}

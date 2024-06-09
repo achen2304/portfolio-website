@@ -4,19 +4,21 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 49px;
+  justify-content: flex;
+  margin-top: 100px;
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .content {
+  width: 65%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: left;
   color: var(--color-text);
   z-index: 1;
+  padding-right: 20%;
 }
 
 .title {
@@ -54,6 +56,9 @@
 }
 
 .contactBtn {
+  width: auto;
+  max-width: 235px;
+  height: auto;
   text-decoration: none;
   color: var(--color-text);
   border-radius: 35px;
@@ -66,24 +71,37 @@
     270deg,
     rgba(58, 83, 15) 0%,
     rgb(137, 240, 15) 100%
+    
   )
+}
+
+/*hover button*/
+.contactBtn:hover {
+  background: var(--color-secondary);
+  transform: scale(1.1);
 }
 
 .heroImg {
   width: 100%;
   display: block;
   z-index: 1;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
+
+/*small screens*/
 @media screen and (max-width: 1000px) {
   .container {
     flex-direction: column-reverse;
+    
   }
 
   .content {
     align-items: center;
     text-align: center;
+    padding-top: 26px;
+    padding-right: 0;
+    width: 100%;
   }
   .subtitle::after {
     width: 250px;
@@ -92,6 +110,7 @@
 
   .heroImg {
     width: 100%;
+    padding: 0;
   }
   .title{
     margin-top: 10px;

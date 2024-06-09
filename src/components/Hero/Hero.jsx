@@ -3,9 +3,10 @@ import { getImageUrl1 } from '../../utils';
 import styles from './Hero.module.css';
 
 export const Hero = () => {
+
   return (
     <section className={styles.container}>
-      <div className={styles.content}>
+      <div className={styles.content} data-aos='fade-right'>
         <h1 className={styles.title}>
           Cai Chen
         </h1>
@@ -13,13 +14,17 @@ export const Hero = () => {
           Computer Engineer
         </h2>
         <p className={styles.description}>
-          I'm a student studying computer engineering at Iowa State University.
+          I'm a student studying computer engineering at Iowa State University. More stuff More stuff
+          More stuffMore stuff
+          More stuff
+          More stuff
+          More stuffMore stuffMore stuff
         </p>
         <a href="#contact" className={styles.contactBtn}>
           Contact Me
         </a>
       </div>
-      <div className={styles.imgBox}>
+      <div className={styles.imgBox} data-aos='fade-left'>
         <img src={getImageUrl1("hero/Hero.jpg")} alt="Hero image of me" className={styles.heroImg} />
       </div>
       <div className={styles.topBlur} />

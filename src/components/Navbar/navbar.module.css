@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px; 
+  padding: 30px; 
   border-radius: 10px; 
   background-color: var(--color-bg2); 
   margin-left: 10%;
@@ -16,10 +16,14 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
+}
+
+.title:hover {
+  color: var(--color-primary);
 }
 
 .menuBtn {
@@ -40,18 +44,23 @@
 .menuItems li::before {
     content: '•';
     color: white;
-    margin-right: 10px; /* Space between dot and text */
+    margin-right: 10px; 
   }
   
   .menuItems li:first-child::before {
-    content: ''; /* Remove the dot before the first item */
+    content: ''; 
   }
   
 .menuItems a {
-  font-size: 20px;
+  font-size: 24px;
   color: var(--color-text);
   text-decoration: none;
 }
+
+.menuItems a:hover {
+    color: var(--color-primary);
+}
+
 
 /* Small screens */
 @media screen and (max-width: 1000px) {
@@ -74,7 +83,7 @@
   .menuItems li::before {
     content: "";
   }
-
+  
   .menuBtn {
     display: block;
     cursor: pointer;
