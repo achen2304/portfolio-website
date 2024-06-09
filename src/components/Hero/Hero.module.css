@@ -115,17 +115,17 @@
 
 .botBlur {
   position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 250px;
-  top: 246px;
-  right: -25vw;
+  width: 70%;
+  height: 50%;
+  top: 50%;
+  right: -10%;
   border-radius: 764px;
   background: var(--color-blur);
   filter: blur(100px);
   z-index: -1;
+  max-width: 100%; 
+  overflow: hidden; 
 }
-
 /*small screens*/
 @media screen and (max-width: 1000px) {
   .container {

@@ -19,7 +19,8 @@ export const Hero = () => {
           More stuff
           More stuff
           More stuffMore stuffMore stuff
-          Har har har har har har har
+          Har har har har har har har 
+          
         </p>
         <a href="#contact" className={styles.contactBtn}>
           Get In Touch
