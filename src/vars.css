@@ -8,6 +8,7 @@
     --color-secondary: #8892b0; /* surrounds the imgs */
     --color-bg: #0a192f; /*Main Background*/
     --color-bg2: #112240; /*Secondary Background*/
+    --color-blur: rgba(17, 34, 64, 0.8);
   
     /*Fonts*/
     --font:"Montserrat";

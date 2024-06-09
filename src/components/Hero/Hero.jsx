@@ -28,6 +28,8 @@ export const Hero = () => {
       <div className={styles.imgContainer} data-aos='fade-left'>
         <img src={getImageUrl1("hero/Hero.jpg")} alt="Hero image of me" className={styles.heroImg} />
       </div>
+      <div className={styles.topBlur} />
+      <div className={styles.botBlur} />
     </section>
   );
 };

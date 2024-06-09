@@ -8,6 +8,7 @@
   padding: 30px; 
   background-color: var(--color-bg2); 
   border-radius: 10px;
+  z-index: 1;
 }
 
 /*title*/
