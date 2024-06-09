@@ -2,10 +2,11 @@
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding-top: 100px;
+    gap: 20px;
 }
 
 .box {
@@ -32,15 +33,15 @@
 }
 
 .img-box {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-secondary);
     padding: 10px;
+    /* background-color: var(--color-primary);
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 20px; */
 }
 
 .img-box img {

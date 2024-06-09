@@ -9,8 +9,9 @@ export const Skills = () => {
   }, []);
 
   return (
-    <section className={styles.container} id ="skills">
-      <div className={styles.box} data-aos='fade'>
+    <section className={styles.container} id="skills">
+      {/*software*/}
+      <div className={styles.box} data-aos='fade-up'>
         <h2 className={styles.title}>Software</h2>
         <div className={styles['img-container']}>
           <div>
@@ -33,7 +34,9 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-      <div className={styles.box} data-aos='fade'>
+
+      {/*lanugages*/}
+      <div className={styles.box} data-aos='fade-up'>
         <h2 className={styles.title}>Languages</h2>
         <div className={styles['img-container']}>
           <div>
@@ -74,7 +77,9 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-      <div className={styles.box} data-aos='fade'>
+      
+      {/*frameworks*/}
+      <div className={styles.box} data-aos='fade-up'>
         <h2 className={styles.title}>Frameworks</h2>
         <div className={styles['img-container']}>
           <div>

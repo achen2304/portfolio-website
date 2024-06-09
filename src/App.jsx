@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './App.module.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -9,19 +9,19 @@ import { Skills } from './components/Skills/skills';
 
 function App() {
 
+  useEffect(() => {
     AOS.init({
       easing: 'ease-out-quart',
       delay: 0,
       duration: 750,
     });
-  
+  }, []);
 
   return (
     <div className={styles.App}>
       <Navbar />
       <Hero />
       <Skills />
-
     </div>
   );
 }
