@@ -53,41 +53,52 @@
   font-size: 20px;
   font-family: var(--font2);
   margin-bottom: 20px;
+
 }
 
 .contactBtn {
   width: auto;
-  max-width: 235px;
+  max-width: 192px;
   height: auto;
   text-decoration: none;
   color: var(--color-text);
-  border-radius: 35px;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 20px;
   padding: 10px 26px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: var(--color-primary);
-  background: linear-gradient(
-    270deg,
-    rgba(58, 83, 15) 0%,
-    rgb(137, 240, 15) 100%
-    
-  )
+  background-color: var(--color-bg2);
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
 }
 
 /*hover button*/
 .contactBtn:hover {
-  background: var(--color-secondary);
-  transform: scale(1.1);
+  background: var(--color-primary);
+  color: var(--color-bg2);
 }
 
 .heroImg {
   width: 100%;
   display: block;
   z-index: 1;
-  padding-left: 20px;
+  border-radius: 10px;
 }
 
+.imgContainer {
+  position: relative;
+  padding: 10px;
+  z-index: 1;
+}
+
+.imgContainer::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--color-primary);
+  border-radius: 10px;
+  z-index: -1;
+}
 
 /*small screens*/
 @media screen and (max-width: 1000px) {
@@ -110,9 +121,8 @@
 
   .heroImg {
     width: 100%;
-    padding: 0;
   }
   .title{
-    margin-top: 10px;
+    margin-top: 30px;
   }
 }

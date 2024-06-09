@@ -13,8 +13,8 @@ export const Navbar = () => {
         <img className={styles.menuBtn} 
           src={ 
             menuOpen /* menu Buttom */
-            ? getImageUrl1("nav/closeIcon.png") 
-            : getImageUrl1("nav/menuIcon.png")
+            ? getImageUrl1("nav/x.png") 
+            : getImageUrl1("nav/menu.png")
           } 
             alt="menu-button"
             onClick={() => setMenuOpen(!menuOpen)}

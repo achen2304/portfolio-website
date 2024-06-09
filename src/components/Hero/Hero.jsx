@@ -19,16 +19,15 @@ export const Hero = () => {
           More stuff
           More stuff
           More stuffMore stuffMore stuff
+          Har har har har har har har
         </p>
         <a href="#contact" className={styles.contactBtn}>
-          Contact Me
+          Get In Touch
         </a>
       </div>
-      <div className={styles.imgBox} data-aos='fade-left'>
+      <div className={styles.imgContainer} data-aos='fade-left'>
         <img src={getImageUrl1("hero/Hero.jpg")} alt="Hero image of me" className={styles.heroImg} />
       </div>
-      <div className={styles.topBlur} />
-      <div className={styles.bottomBlur} />
     </section>
   );
 };
