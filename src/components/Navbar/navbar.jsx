@@ -12,12 +12,19 @@ export const Navbar = () => {
     navigate(path);
     setTimeout(() => {
       document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-    }, 100); 
+    setLoading(false);}, 100); 
   };
 
   return (
     <nav className={styles.navbar}>
-      <Link className={styles.title} to="/" data-aos="fade-down" data-aos-delay="0">Portfolio</Link>
+      <Link 
+      className={styles.title} 
+      to="/" 
+      data-aos="fade-down" 
+      data-aos-delay="0" 
+      onClick={() => setLoading(true)}>
+        Portfolio
+      </Link>
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}

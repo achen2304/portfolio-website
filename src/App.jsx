@@ -23,15 +23,19 @@ function App() {
       delay: 20,
       duration: 850,
     });
+  },[]);
 
     // Simulate a loading delay
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000); // 2 seconds
 
-    return () => clearTimeout(timer); // Cleanup timer
-  }, []);
 
+    
+    const handleLoading = (state) => {
+      setLoading(state);
+    };
+  
     return (
     <Router>
       <div className={styles.App}>
@@ -41,7 +45,7 @@ function App() {
           </div>
         ) : (
           <>
-        <Navbar />
+        <Navbar setLoading={handleLoading} />
         <Routes>
           <Route
             exact
