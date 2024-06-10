@@ -1,10 +1,17 @@
-// server.js
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const nodemailer = require('nodemailer');
-require('dotenv').config(); // Add this line
+// Load environment variables from .env file
+import dotenv from 'dotenv';
+dotenv.config(); 
 
+// Log the environment variables to ensure they are loaded correctly
+console.log('Email:', process.env.EMAIL);
+console.log('Email Password:', process.env.EMAIL_PASSWORD);
+
+import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import nodemailer from 'nodemailer';
+
+// Initialize Express app
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -12,29 +19,34 @@ const PORT = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-// Nodemailer setup
+// Nodemailer transporter setup
 const transporter = nodemailer.createTransport({
-  service: 'gmail', // e.g., 'gmail'
+  service: 'gmail',
   auth: {
-    user: process.env.EMAIL, // Use environment variables
-    pass: process.env.EMAIL_PASSWORD // Use environment variables
+    user: process.env.EMAIL, 
+    pass: process.env.EMAIL_PASSWORD 
   }
 });
 
-// Routes
+// Root route to test server
+app.get('/', (req, res) => {
+  res.send('Welcome to the backend server!');
+});
+
+// Contact route to handle form submissions
 app.post('/contact', (req, res) => {
   const { Name, Email, Message } = req.body;
 
   const mailOptions = {
-    from: Email,
-    to: process.env.EMAIL, // Use environment variable
+    from: process.env.EMAIL, // Ensure the email is correct here
+    to: process.env.EMAIL,   // Sending to your own email
     subject: 'New Contact Form Submission',
     text: `Name: ${Name}\nEmail: ${Email}\nMessage: ${Message}`
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.log(error);
+      console.log('Error sending email:', error);
       res.status(500).send('Error sending email');
     } else {
       console.log('Email sent: ' + info.response);
