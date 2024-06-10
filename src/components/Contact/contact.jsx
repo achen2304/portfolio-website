@@ -30,9 +30,9 @@ export const Contact = () => {
 
   return (
     <section className={styles.container} id="contact">
-      <h1 className={styles.header}>Contact</h1>
+      <h1 className={styles.header} data-aos='fade'>Contact</h1>
       <div className={styles.totalContainer}>
-        <div className={styles.info} data-aos='zoom-in-up' data-aos-delay='100'>
+        <div className={styles.info} data-aos='fade-right' data-aos-delay='0'>
           <p className={styles.text}> <IoMail /> &nbsp;achen2304@gmail.com</p>
           <p className={styles.text}> <FaPhoneAlt /> &nbsp;641-808-8022</p>
           <div className={styles.imgContainer}>
@@ -64,7 +64,7 @@ export const Contact = () => {
             </a>
           </div>
         </div>
-        <form className={styles.contact} data-aos='zoom-in-up' data-aos-delay='100' onSubmit={handleSubmit}>
+        <form className={styles.contact} data-aos='fade-left' data-aos-delay='0' onSubmit={handleSubmit}>
           <input
             className={styles.minorContact}
             id="Name"

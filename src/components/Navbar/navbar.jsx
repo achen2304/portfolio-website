@@ -17,7 +17,7 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <Link className={styles.title} to="/">Portfolio</Link>
+      <Link className={styles.title} to="/" data-aos="fade-down" data-aos-delay="0">Portfolio</Link>
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}

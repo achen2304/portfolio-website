@@ -8,7 +8,7 @@ export const Projects = () => {
   
   return (
     <section className={styles.container} id="projects">
-      <h1 className={styles.header}>Projects</h1>
+      <h1 className={styles.header} data-aos='fade'>Projects</h1>
       <div className={styles.allProjectContainer}>
 
         {/* Project 1 */}

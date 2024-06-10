@@ -10,7 +10,7 @@ export const Skills = () => {
 
   return (
     <section className={styles.container} id="skills">
-      <h1 className={styles.header}>Skills</h1>
+      <h1 className={styles.header} data-aos='fade'>Skills</h1>
       {/*software*/}
       <div className={styles.boxcontainer}>
         <div className={styles.box} data-aos='zoom-in-up' >

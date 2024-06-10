@@ -69,7 +69,7 @@
 
 /*hover button*/
 .contactBtn:hover {
-  background: var(--color-primary);
+  background-color: var(--color-primary);
   color: var(--color-bg2);
 }
 

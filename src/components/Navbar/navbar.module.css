@@ -56,9 +56,10 @@
   border: none;
 }
 
-.menuItems a:hover, .menuItems button:hover {
+.menuItems a:hover, .menuItems button:hover, .img, .img2{
     color: var(--color-primary);
     cursor: pointer;
+    transform:scale(1.1);
 }
 
 .imgContainer {

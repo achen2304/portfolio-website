@@ -12,3 +12,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}

@@ -5,7 +5,7 @@ import styles from './Hero.module.css';
 export const Hero = () => {
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} data-aos='fade-in' data-aos-delay='100'>
       <div className={styles.content}>
         <h1 className={styles.title} data-aos='fade-right' data-aos-delay='400'>
           Cai Chen
