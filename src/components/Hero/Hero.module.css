@@ -108,7 +108,7 @@
   border-radius: 764px;
   background: var(--color-blur);
   filter: blur(100px);
-  z-index: -1;
+  z-index: -2;
 }
 
 .botBlur {
@@ -120,7 +120,7 @@
   border-radius: 764px;
   background: var(--color-blur);
   filter: blur(100px);
-  z-index: -1;
+  z-index: -2;
   max-width: 100%; 
   overflow: hidden; 
 }

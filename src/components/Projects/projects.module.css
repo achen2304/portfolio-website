@@ -74,6 +74,21 @@
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.title:hover {
+  transform: translate(5px, -5px);
+}
+
+.title a{
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.title a:hover{
+  color: var(--color-primary);
 }
 
 .skillsUsed {

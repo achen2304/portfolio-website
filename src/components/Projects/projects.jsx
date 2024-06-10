@@ -1,6 +1,7 @@
 import React from 'react';
 import { getImageUrl1 } from '../../utils';
 import styles from './projects.module.css';
+import { GoArrowUpRight } from "react-icons/go";
 
 export const Projects = () => {
 
@@ -16,9 +17,10 @@ export const Projects = () => {
             <img src={getImageUrl1("projects/pcbKeyboard.png")} alt="Picture of PCB" className={styles.projectImg} />
           </div>
           <div className={styles.textContainer}>
-            <div className={styles.title}>
-              Project Name
-            </div>
+          <div className={styles.title}> <a href="https://github.com/achen2304" target="_blank">
+              Project Name <GoArrowUpRight />
+              </a></div> 
+
             {/*Description*/}
             <ul className={styles.description}>
               <li>Descriptor 1</li>
@@ -39,9 +41,10 @@ export const Projects = () => {
             <img src={getImageUrl1("projects/pcbKeyboard.png")} alt="Picture of PCB" className={styles.projectImg} />
           </div>
           <div className={styles.textContainer}>
-            <div className={styles.title}>
-              Pi Pico Keyboard
-            </div>
+            <div className={styles.title}> <a href="https://github.com/achen2304/Pi-Pico-Keyboard" target="_blank">
+              Pi Pico Keyboard <GoArrowUpRight />
+              </a></div> 
+
             {/*Description*/}
             <ul className={styles.description}>
               <li>
@@ -51,8 +54,8 @@ export const Projects = () => {
               <li>
                 Programmed a Pi Pico microcontroller to convert keystrokes into corresponding characters using Python.
               </li>
-
             </ul>
+            
             {/*SKILL SECTION*/}
             <ul className={styles.skillsUsed}>
               <li>Kicad</li>
@@ -60,9 +63,12 @@ export const Projects = () => {
             </ul>
           </div>
         </nav>
+      <div className={styles.botBlur} />
+
         
 
       </div>
     </section>
   );
+
 };

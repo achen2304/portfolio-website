@@ -23,11 +23,11 @@ export const Navbar = () => {
         <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
         onClick={() => setMenuOpen(false)}
           >
-          {/* <li><a href="#experience">Experience</a></li> */}
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#resume">Resume</a></li>
+          <li data-aos='fade-down' data-aos-delay='100'><a href="#experience">Experience</a></li>
+          <li data-aos='fade-down' data-aos-delay='200'><a href="#projects">Projects</a></li>
+          <li data-aos='fade-down' data-aos-delay='300'><a href="#skills">Skills</a></li>
+          <li data-aos='fade-down' data-aos-delay='400'><a href="#contact">Contact</a></li>
+          <li data-aos='fade-down' data-aos-delay='500'><a href="#resume">Resume</a></li>
         </ul>
       </div>
     </nav>

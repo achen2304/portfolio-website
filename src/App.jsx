@@ -7,6 +7,7 @@ import { Navbar } from './components/Navbar/navbar';
 import { Hero } from './components/Hero/Hero';
 import { Skills } from './components/Skills/skills';
 import { Projects } from './components/Projects/projects'; 
+import { Contact } from './components/Contact/contact';
 
 function App() {
   useEffect(() => {
@@ -19,10 +20,13 @@ function App() {
 
   return (
     <div className={styles.App}>
+
       <Navbar />
       <Hero />
       <Projects /> 
       <Skills />
+      <Contact />
+
     </div>
   );
 }
