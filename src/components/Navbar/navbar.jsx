@@ -28,6 +28,14 @@ export const Navbar = () => {
           <li data-aos='fade-down' data-aos-delay='300'><a href="#skills">Skills</a></li>
           <li data-aos='fade-down' data-aos-delay='400'><a href="#contact">Contact</a></li>
           <li data-aos='fade-down' data-aos-delay='500'><a href="#resume">Resume</a></li>
+          <div className={styles.imgContainer}>
+                <a href="https://github.com/achen2304" target="_blank">
+                    <img src={getImageUrl1("contact/github.png")} className={styles.img}/>
+                </a>
+                <a href="https://www.linkedin.com/in/cai-chen-758a84290/" target="_blank">
+                    <img src={getImageUrl1("contact/linkedin.png")} className={styles.img2}/>
+                </a>
+            </div>
         </ul>
       </div>
     </nav>

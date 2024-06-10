@@ -13,7 +13,7 @@ export const Skills = () => {
       <h1 className={styles.header}>Skills</h1>
       {/*software*/}
       <div className={styles.boxcontainer}>
-        <div className={styles.box} data-aos='zoom-in-up' data-aos-duration='500'>
+        <div className={styles.box} data-aos='zoom-in-up' >
           <h2 className={styles.title}>Software</h2>
           <div className={styles['img-container']}>
             <div>
@@ -38,7 +38,7 @@ export const Skills = () => {
           </div>
 
       {/*lanugages*/}
-      <div className={styles.box} data-aos='zoom-in-up' data-aos-duration='500'>
+      <div className={styles.box} data-aos='zoom-in-up'>
         <h2 className={styles.title}>Languages</h2>
         <div className={styles['img-container']}>
           <div>
@@ -81,7 +81,7 @@ export const Skills = () => {
       </div>
       
       {/*frameworks*/}
-      <div className={styles.box} data-aos='zoom-in-up' data-aos-duration='500'>
+      <div className={styles.box} data-aos='zoom-in-up' >
         <h2 className={styles.title}>Frameworks</h2>
         <div className={styles['img-container']}>
           <div>

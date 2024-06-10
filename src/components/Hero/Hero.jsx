@@ -7,13 +7,13 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title} data-aos='fade-right' data-aos-delay='800'>
+        <h1 className={styles.title} data-aos='fade-right' data-aos-delay='400'>
           Cai Chen
         </h1>
-        <h2 className={styles.subtitle} data-aos='fade-right' data-aos-delay='800'>
+        <h2 className={styles.subtitle} data-aos='fade-right' data-aos-delay='400'>
           Computer Engineer
         </h2>
-        <p className={styles.description} data-aos='fade-right' data-aos-delay='1000'>
+        <p className={styles.description} data-aos='fade-right' data-aos-delay='600'>
           I'm a student studying computer engineering at Iowa State University. More stuff More stuff
           More stuffMore stuff
           More stuff

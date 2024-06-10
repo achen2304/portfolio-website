@@ -36,7 +36,7 @@ export const Projects = () => {
         </nav>
 
         {/* Project 1 */}
-        <nav className={styles.projectContainer} data-aos='fade-up-left' data-aos-delay='200'>  
+        <nav className={styles.projectContainer} data-aos='fade-up-right' data-aos-delay='200'>  
           <div className={styles.imgContainer}>
             <img src={getImageUrl1("projects/pcbKeyboard.png")} alt="Picture of PCB" className={styles.projectImg} />
           </div>
@@ -63,10 +63,6 @@ export const Projects = () => {
             </ul>
           </div>
         </nav>
-      <div className={styles.botBlur} />
-
-        
-
       </div>
     </section>
   );
