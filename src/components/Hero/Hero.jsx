@@ -14,12 +14,8 @@ export const Hero = () => {
           Computer Engineer
         </h2>
         <p className={styles.description} data-aos='fade-right' data-aos-delay='600'>
-          I'm a student studying computer engineering at Iowa State University. More stuff More stuff
-          More stuffMore stuff
-          More stuff
-          More stuff
-          More stuffMore stuffMore stuff
-          Har har har har har har har 
+          I'm a student studying computer engineering at Iowa State University. 
+          Passionate in electronics, software and bridging the gap between the two.
           
         </p>
         <a href="#contact" className={styles.contactBtn} data-aos='fade-right' data-aos-delay='1000'>

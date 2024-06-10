@@ -61,7 +61,11 @@ export const Navbar = () => {
             <Link to="/resume">Resume</Link>
           </li>
           <div className={styles.imgContainer}>
-            <a href="https://github.com/achen2304" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/achen2304" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            data-aos="fade-down"
+            data-aos-delay="600">
               <img
                 src={                  
                   hoveredImage === 'github'
@@ -69,21 +73,20 @@ export const Navbar = () => {
                   : getImageUrl1("contact/github.png")
                 }
                 className={styles.img}
-                data-aos="fade-down"
-                data-aos-delay="600"
                 onMouseEnter={() => setHoveredImage('github')}
                 onMouseLeave={() => setHoveredImage(null)}
               />
             </a>
-            <a href="https://www.linkedin.com/in/cai-chen-758a84290/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/cai-chen-758a84290/" 
+            target="_blank" rel="noopener noreferrer"
+            data-aos="fade-down"
+            data-aos-delay="700">
               <img
                 src={
                   hoveredImage === 'linkedin'
                   ? getImageUrl1("contact/linkedin2.png")
                   : getImageUrl1("contact/linkedin.png")}
                 className={styles.img2}
-                data-aos="fade-down"
-                data-aos-delay="600"
                 onMouseEnter={() => setHoveredImage('linkedin')}
                 onMouseLeave={() => setHoveredImage(null)}
               />

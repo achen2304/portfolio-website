@@ -90,6 +90,12 @@ export const Skills = () => {
             </div>
             <div className={styles.subtitle}>React</div>
           </div>
+          <div>
+            <div className={styles['img-box']}>
+              <img src={getImageUrl1("skills/express.svg")} alt="Express" />
+            </div>
+            <div className={styles.subtitle}>Express.js</div>
+          </div>
         </div>
       </div>
     </div>  
