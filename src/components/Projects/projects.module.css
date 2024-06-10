@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column; 
-  padding-top: 100px;
   gap: 20px;
   color: var(--color-text);
   z-index: 1;
@@ -59,8 +58,12 @@
   border-radius: 10px;
   min-width: 100%;
   background-color: var(--color-bg2);
+  box-shadow: var(--boxshadow2);
+  transition: transform 0.3s ease;
 }
-
+.projectContainer:hover{
+  transform: translate(5px, -5px);
+}
 .imgContainer {
   flex: 0 0 auto; 
 }

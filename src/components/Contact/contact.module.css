@@ -3,7 +3,7 @@
 .container {
     display: flex;
     flex-direction: column; 
-    padding-top: 100px;
+    padding-top: 20vh;
     gap: 20px;
     color: var(--color-text);
     z-index: 1;
@@ -45,6 +45,7 @@
 .totalContainer {
     display: flex;
     flex-direction: row;
+    
 }
 
 .info {
@@ -58,6 +59,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    box-shadow: var(--boxshadow2);
 }
 
 .text {
@@ -91,6 +93,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    box-shadow: var(--boxshadow2);
+
 }
 
 

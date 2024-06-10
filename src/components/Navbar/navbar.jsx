@@ -80,7 +80,7 @@ export const Navbar = () => {
             <a href="https://www.linkedin.com/in/cai-chen-758a84290/" 
             target="_blank" rel="noopener noreferrer"
             data-aos="fade-down"
-            data-aos-delay="700">
+            data-aos-delay="600">
               <img
                 src={
                   hoveredImage === 'linkedin'

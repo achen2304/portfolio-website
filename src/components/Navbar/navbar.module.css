@@ -56,7 +56,7 @@
   border: none;
 }
 
-.menuItems a:hover, .menuItems button:hover, .img, .img2{
+.menuItems a:hover, .menuItems button:hover, .img:hover, .img2:hover{
     color: var(--color-primary);
     cursor: pointer;
     transform:scale(1.1);
