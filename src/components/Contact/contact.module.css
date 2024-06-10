@@ -147,21 +147,30 @@
     .totalContainer {
         flex-direction: column;
         align-items: center;
+        display: flex;
     }
     .contact{
-        flex-direction: column;
+        display: flex;
+        flex-direction: wrap;
+        flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
+            margin: 20px 0;
+        max-width: 100%;
+
     }
-    .contact {
-        margin: 20px 0;
-        min-width: 100%;
-    }
+
     .minorContact{
-        min-width: 90%;
+        min-width: 70%;
         min-height: 30px;
     }
     .message {
-        min-width: 90%;
+        min-width: 70%;
         min-height: 140px;
     }
+    .submit {
+        margin-top: 10px;
+    }
   }
+
+  
