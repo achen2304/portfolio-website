@@ -28,6 +28,16 @@ export const Projects = () => {
             </a>
           </div> 
             {/*Description*/}
+          <ul className={styles.description}>
+            <li>Descriptor 1</li>
+            <li>Descriptor 2</li>
+            <li>Descriptor 3</li>
+          </ul>
+          {/*SKILL SECTION*/}
+          <ul className={styles.skillsUsed}>
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+          </ul>
           </div>
         </nav>
 
