@@ -38,8 +38,8 @@ app.post('/contact', (req, res) => {
   const { Name, Email, Message } = req.body;
 
   const mailOptions = {
-    from: process.env.EMAIL, // Ensure the email is correct here
-    to: process.env.EMAIL,   // Sending to your own email
+    from: process.env.EMAIL, 
+    to: process.env.EMAIL,   
     subject: 'New Contact Form Submission',
     text: `Name: ${Name}\nEmail: ${Email}\nMessage: ${Message}`
   };

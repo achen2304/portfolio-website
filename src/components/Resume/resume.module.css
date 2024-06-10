@@ -1,7 +1,8 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
+  align-items: center;
+  padding-top: 0;
   gap: 20px;
   color: var(--color-text);
   z-index: 1;
@@ -25,7 +26,7 @@
   background-color: var(--color-primary);
   position: absolute;
   top: 50%;
-  width: calc(50% - 100px);
+  width: calc(100% - 100px);
 }
 
 .header::before {
@@ -45,4 +46,34 @@
   margin: 0 auto; 
   border: 1px solid #ccc; 
   overflow: hidden; 
+}
+
+.downloadSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  width: 100%;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg2);
+  border-radius: 10px;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+a {
+  font-size: 1em;
+  color: var(--color-primary);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.infoContainer h2 {
+  color: var(--color-text);
 }
