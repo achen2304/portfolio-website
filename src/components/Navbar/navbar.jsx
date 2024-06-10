@@ -30,9 +30,9 @@ export const Navbar = () => {
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(false)}
         >
-          <li data-aos="fade-down" data-aos-delay="100">
+          {/* <li data-aos="fade-down" data-aos-delay="100">
             <button onClick={() => handleNavClick('/', 'experience')}>Experience</button>
-          </li>
+          </li> */}
           <li data-aos="fade-down" data-aos-delay="200">
             <button onClick={() => handleNavClick('/', 'projects')}>Projects</button>
           </li>

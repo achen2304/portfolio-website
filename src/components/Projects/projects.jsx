@@ -12,7 +12,7 @@ export const Projects = () => {
       <div className={styles.allProjectContainer}>
 
         {/* Project 1 */}
-        <nav className={styles.projectContainer} data-aos='fade-up-right' data-aos-delay='200'  >
+        <nav className={styles.projectContainer} data-aos='fade-up-right' data-aos-delay='200'>  
           <div className={styles.imgContainer}>
             <img src={getImageUrl1("projects/pcbKeyboard.png")} alt="Picture of PCB" className={styles.projectImg} />
           </div>
