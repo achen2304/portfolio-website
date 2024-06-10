@@ -82,7 +82,7 @@
 .contact {
     margin-right: 10%;
     margin-left: 1%;
-    padding: 40px 0 ;
+    padding: 50px 0 ;
     background-color: var(--color-bg2);
     min-width: 60%;
     display: flex;
@@ -133,9 +133,9 @@
 }
 
 .submit{
-    margin: 1% 100px;
+    margin: 1% 500px;
     padding: 8px;
-    min-width: 50px;
+    min-width: 100px;
     color: var(--color-primary);
     color: var(--color-third);
     background-color: var(--color-secondary);

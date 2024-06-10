@@ -78,6 +78,7 @@ export const Contact = () => {
             className={styles.minorContact}
             id="Email"
             name="Email"
+            type="email"
             required
             placeholder='Your Email'
             value={formData.Email}
