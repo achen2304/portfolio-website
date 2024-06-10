@@ -6,14 +6,14 @@ import 'aos/dist/aos.css';
 import { Navbar } from './components/Navbar/navbar';
 import { Hero } from './components/Hero/Hero';
 import { Skills } from './components/Skills/skills';
+import { Projects } from './components/Projects/projects'; 
 
 function App() {
-
   useEffect(() => {
     AOS.init({
       easing: 'ease-out-quart',
-      delay: 0,
-      duration: 750,
+      delay: 20,
+      duration: 850,
     });
   }, []);
 
@@ -21,6 +21,7 @@ function App() {
     <div className={styles.App}>
       <Navbar />
       <Hero />
+      <Projects /> 
       <Skills />
     </div>
   );

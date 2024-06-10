@@ -10,33 +10,35 @@ export const Skills = () => {
 
   return (
     <section className={styles.container} id="skills">
+      <h1 className={styles.header}>Skills</h1>
       {/*software*/}
-      <div className={styles.box} data-aos='fade-up'>
-        <h2 className={styles.title}>Software</h2>
-        <div className={styles['img-container']}>
-          <div>
-            <div className={styles['img-box']}>
-              <img src={getImageUrl1("skills/altium.svg")} alt="Altium" />
+      <div className={styles.boxcontainer}>
+        <div className={styles.box} data-aos='zoom-in-up' data-aos-duration='500'>
+          <h2 className={styles.title}>Software</h2>
+          <div className={styles['img-container']}>
+            <div>
+              <div className={styles['img-box']}>
+                <img src={getImageUrl1("skills/altium.svg")} alt="Altium" />
+              </div>
+              <div className={styles.subtitle}>Altium</div>
             </div>
-            <div className={styles.subtitle}>Altium</div>
-          </div>
-          <div>
-            <div className={styles['img-box']}>
-              <img src={getImageUrl1("skills/kicad.svg")} alt="KiCad" />
+            <div>
+              <div className={styles['img-box']}>
+                <img src={getImageUrl1("skills/kicad.svg")} alt="KiCad" />
+              </div>
+              <div className={styles.subtitle}>KiCad</div>
             </div>
-            <div className={styles.subtitle}>KiCad</div>
-          </div>
-          <div>
-            <div className={styles['img-box']}>
-              <img src={getImageUrl1("skills/solidworks.svg")} alt="SolidWorks" />
+            <div>
+              <div className={styles['img-box']}>
+                <img src={getImageUrl1("skills/solidworks.svg")} alt="SolidWorks" />
+              </div>
+              <div className={styles.subtitle}>SolidWorks</div>
             </div>
-            <div className={styles.subtitle}>SolidWorks</div>
           </div>
-        </div>
-      </div>
+          </div>
 
       {/*lanugages*/}
-      <div className={styles.box} data-aos='fade-up'>
+      <div className={styles.box} data-aos='zoom-in-up' data-aos-duration='500'>
         <h2 className={styles.title}>Languages</h2>
         <div className={styles['img-container']}>
           <div>
@@ -79,7 +81,7 @@ export const Skills = () => {
       </div>
       
       {/*frameworks*/}
-      <div className={styles.box} data-aos='fade-up'>
+      <div className={styles.box} data-aos='zoom-in-up' data-aos-duration='500'>
         <h2 className={styles.title}>Frameworks</h2>
         <div className={styles['img-container']}>
           <div>
@@ -90,6 +92,7 @@ export const Skills = () => {
           </div>
         </div>
       </div>
+    </div>  
     </section>
   );
 };

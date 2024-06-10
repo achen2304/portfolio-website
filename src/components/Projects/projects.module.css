@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  flex-direction: column; 
+  padding-top: 100px;
+  gap: 20px;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  color: var(--color-text);
+  font-size: var(--text-section);
+  position: relative; 
+  padding: 10px 0; 
+}
+
+.header::before, .header::after {
+  content: "";
+  height: 2px;
+  background-color: var(--color-primary); 
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 100px); 
+}
+
+.header::before {
+  left: 0;
+}
+
+.header::after {
+  right: 0;
+}
+
+.header h1 {
+  padding: 0 25px; 
+  margin: 0; 
+}
+
+/* projects */
+.allProjectContainer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-direction: column; 
+}
+
+.projectContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 100%;
+  background-color: var(--color-bg2);
+}
+
+.imgContainer {
+  flex: 0 0 auto; 
+}
+
+.textContainer {
+  margin-top: 10px;
+  flex: 1;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skillsUsed {
+  font-size: 0.8em;
+  font-weight: 0;
+  color: var(--color-text);
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.skillsUsed li {
+  color: var(--color-primary);
+  padding: 7px;
+  background-color: var(--color-third);
+  border-radius: 40px;
+}
+.description {
+  list-style-type: disc;
+  padding-left: 30px;
+  align-items: center;
+}
+
+.description li {
+  font-family: var(--font2);
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.projectImg {
+  max-height: 325px;
+  max-width: 325px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+/* Adjustments for small screens */
+@media screen and (max-width: 800px) {
+  .projectContainer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .textContainer {
+    flex-direction:row;
+
+    align-items: flex-start;
+}
+
+  .imgContainer {
+    max-height: 100%;
+  max-width: 100%;
+      margin-top: 20px;
+  }
+}

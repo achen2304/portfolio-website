@@ -1,13 +1,51 @@
-@import "../../vars.css";
-
 .container {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; 
     padding-top: 100px;
     gap: 20px;
+    color: var(--color-text);
     z-index: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    font-size: var(--text-section);
+    position: relative; 
+    padding: 10px 0; 
+}
+
+.header::before, .header::after {
+    content: "";
+    height: 2px;
+    background-color: var(--color-primary); 
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 70px); 
+}
+
+.header::before {
+    left: 0;
+}
+
+.header::after {
+    right: 0;
+}
+
+.header h1 {
+    padding: 0 25px; /* Ensure even padding around the text */
+    margin: 0; /* Reset margin */
+}
+
+
+/*post header settings*/
+.boxcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
 }
 
 .box {
@@ -16,7 +54,7 @@
     align-items: center;
     margin-bottom: 20px;
     background-color: var(--color-bg2);
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px;
     border-radius: 40px;
 }
 
@@ -40,9 +78,6 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    /* background-color: var(--color-primary);
-    box-sizing: border-box;
-    border-radius: 20px; */
 }
 
 .img-box img {
