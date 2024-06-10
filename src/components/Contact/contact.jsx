@@ -6,6 +6,7 @@ import { IoMail } from "react-icons/io5";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({ Name: '', Email: '', Message: '' });
+  const [hoveredImage, setHoveredImage] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,10 +37,30 @@ export const Contact = () => {
           <p className={styles.text}> <FaPhoneAlt /> &nbsp;641-808-8022</p>
           <div className={styles.imgContainer}>
             <a href="https://github.com/achen2304" target="_blank" rel="noopener noreferrer">
-              <img src={getImageUrl1("contact/github.png")} className={styles.img} alt="GitHub"/>
+              <img 
+                src={                  
+                  hoveredImage === 'github'
+                  ? getImageUrl1("contact/github2.png")
+                  : getImageUrl1("contact/github.png")
+                }
+                className={styles.img} 
+                alt="GitHub"
+                onMouseEnter={() => setHoveredImage('github')}
+                onMouseLeave={() => setHoveredImage(null)}
+                />
             </a>
             <a href="https://www.linkedin.com/in/cai-chen-758a84290/" target="_blank" rel="noopener noreferrer">
-              <img src={getImageUrl1("contact/linkedin.png")} className={styles.img} alt="LinkedIn"/>
+              <img                 
+                src={                  
+                  hoveredImage === 'linkedin'
+                  ? getImageUrl1("contact/linkedin2.png")
+                  : getImageUrl1("contact/linkedin.png")
+                }
+                className={styles.img} 
+                alt="LinkedIn"
+                onMouseEnter={() => setHoveredImage('linkedin')}
+                onMouseLeave={() => setHoveredImage(null)}
+                />
             </a>
           </div>
         </div>

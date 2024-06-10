@@ -8,7 +8,7 @@ export const Resume = () => {
   return (
     <section className={styles.container} id="resume">
       <h1 className={styles.header}></h1>
-      <div className={styles.downloadSection}>
+      <div className={styles.downloadSection} data-aos="fade-up" data-aos-delay="100">
         <a href={samplePDF} download="resume.pdf" className={styles.downloadLink}>
           <div className={styles.infoContainer}>
             <h2>June 2024 Resume</h2>
@@ -16,7 +16,7 @@ export const Resume = () => {
           </div>
         </a>
       </div>
-      <div className={styles.pdfContainer}>
+      <div className={styles.pdfContainer} data-aos="fade-up" data-aos-delay="200">
         <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
           <Viewer fileUrl={samplePDF} />
         </Worker>
