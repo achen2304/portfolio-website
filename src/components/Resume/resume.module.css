@@ -1,50 +1,48 @@
 .container {
-    display: flex;
-    flex-direction: column; 
-    padding-top: 100px;
-    gap: 20px;
-    color: var(--color-text);
-    z-index: 1;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    width: 100%; 
-    color: var(--color-text);
-    font-size: var(--text-section);
-    position: relative; 
-    padding: 10px 0; 
-  }
-  
-  .header::before, .header::after {
-    content: "";
-    height: 2px;
-    background-color: var(--color-primary); 
-    position: absolute;
-    top: 50%;
-    width: calc(50% - 100px); 
-  }
-  
-  .header::before {
-    left: 0;
-  }
-  
-  .header::after {
-    right: 0;
-  }
-  
-  .header h1 {
-    padding: 0 25px; 
-    margin: 0; 
-  }
-  
-  .pdfContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh; /* Adjust the height as needed */
-    overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  gap: 20px;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: var(--color-text);
+  font-size: var(--text-section);
+  position: relative;
+  padding: 10px 0;
+}
+
+.header::before,
+.header::after {
+  content: "";
+  height: 2px;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 100px);
+}
+
+.header::before {
+  left: 0;
+}
+
+.header::after {
+  right: 0;
+}
+
+.pdfContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* Adjust the width as needed */
+  height: 80vh; /* Adjust the height as needed */
+  margin: 0 auto; /* Center the container */
+  border: 1px solid #ccc; /* Optional: add a border for better visibility */
+  overflow: hidden; /* Hide overflow content */
 }
