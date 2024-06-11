@@ -7,6 +7,9 @@
     gap: 20px;
     color: var(--color-text);
     z-index: 1;
+    max-width: 100%;
+    overflow-x: hidden;
+  
 }
 
 .header {

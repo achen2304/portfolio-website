@@ -1,5 +1,11 @@
 @import "./vars.css";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .App {
   background-color: var(--color-bg);
   width: 100%;
