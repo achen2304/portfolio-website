@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 30px; 
-  /* background-color: var(--color-bg2);  */
+  /* background-color: var(--color-bg2);   */
   /* border-radius: 10px; */
   z-index: 1;
   /* box-shadow: var(--boxshadow2); */
@@ -23,6 +23,7 @@
 
 .title:hover {
   color: var(--color-primary);
+  transform: scale(1.1);
 }
 
 .menuBtn {

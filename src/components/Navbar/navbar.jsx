@@ -29,7 +29,7 @@ export const Navbar = () => {
       data-aos="fade-down" 
       data-aos-delay="0" 
       onClick={() => setLoading(true)}>
-        Portfolio
+        caizchen
       </Link>
       <div className={styles.menu}>
         <img
