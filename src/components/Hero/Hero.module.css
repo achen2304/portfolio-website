@@ -130,7 +130,8 @@
 @media screen and (max-width: 1000px) {
   .container {
     flex-direction: column-reverse;
-    
+    margin-top: 50vh;  
+
   }
 
   .content {
@@ -146,7 +147,7 @@
 }
 
   .heroImg {
-    width: 100%;
+    margin-top: auto;
   }
   .title{
     margin-top: 30px;
