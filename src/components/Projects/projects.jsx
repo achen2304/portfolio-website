@@ -13,32 +13,10 @@ export const Projects = () => {
   return (
     <section className={styles.container} id="projects">
       <h1 className={styles.header} data-aos='fade'>Projects</h1>
-      <div className={styles.allProjectContainer}>
+      <div className={styles.allProjectContainer}> 
 
-        {/* Project 1 */}
-        <nav className={styles.projectContainer} data-aos='fade-up-right' data-aos-delay='100'>  
-          <div className={styles.imgContainer}>
-            <img src={getImageUrl1("projects/pcbKeyboard.png")} alt="Picture of PCB" className={styles.projectImg} />
-          </div>
-          <div className={styles.textContainer}>  
-          <div className={styles.title}> 
-            <a href="https://github.com/achen2304" target="_blank">
-              Project Name <GoArrowUpRight />
-            </a>
-          </div> 
-            {/*Description*/}
-          <ul className={styles.description}>
-            <li>Descriptor 1</li>
-            <li>Descriptor 2</li>
-            <li>Descriptor 3</li>
-          </ul>
-          {/*SKILL SECTION*/}
-          <ul className={styles.skillsUsed}>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-          </ul>
-          </div>
-        </nav>
+        {/* project 2 */} 
+
 
         {/* Project 1 */}
         <nav className={styles.projectContainer} data-aos='fade-up-right' data-aos-delay='200'>  
