@@ -1,6 +1,0 @@
-{
-    "routes": [
-      { "src": "/contact", "dest": "/api/contact" }
-    ]
-  }
-  
