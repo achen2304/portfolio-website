@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styles from './contact.module.css';
-import { getImageUrl1 } from '../../utils';
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import { getImageUrl1 } from '../../utils'; // Assuming getImageUrl1 is defined in your utils
 
 export const Contact = () => {
   const [formData, setFormData] = useState({ Name: '', Email: '', Message: '' });
@@ -16,16 +16,25 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('https://caizchen.com/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    const data = await response.text();
-    alert(data);
+      if (response.ok) {
+        alert('Form submission successful!');
+        setFormData({ Name: '', Email: '', Message: '' }); // Clear the form after successful submission
+      } else {
+        alert('Failed to submit the form');
+      }
+    } catch (error) {
+      console.error('Error submitting the form:', error);
+      alert('An error occurred. Please try again.');
+    }
   };
 
   return (
@@ -47,10 +56,10 @@ export const Contact = () => {
                 alt="GitHub"
                 onMouseEnter={() => setHoveredImage('github')}
                 onMouseLeave={() => setHoveredImage(null)}
-                />
+              />
             </a>
             <a href="https://www.linkedin.com/in/cai-chen-758a84290/" target="_blank" rel="noopener noreferrer">
-              <img                 
+              <img 
                 src={                  
                   hoveredImage === 'linkedin'
                   ? getImageUrl1("contact/linkedin2.png")
@@ -60,7 +69,7 @@ export const Contact = () => {
                 alt="LinkedIn"
                 onMouseEnter={() => setHoveredImage('linkedin')}
                 onMouseLeave={() => setHoveredImage(null)}
-                />
+              />
             </a>
           </div>
         </div>
