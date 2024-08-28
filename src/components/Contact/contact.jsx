@@ -44,6 +44,7 @@ export const Contact = () => {
         <div className={styles.info} data-aos='fade-right' data-aos-delay='0'>
           <p className={styles.text}> <IoMail /> &nbsp;achen2304@gmail.com</p>
           <p className={styles.text}> <FaPhoneAlt /> &nbsp;641-808-8022</p>
+          <p className={styles.text}> <a href="/resume"><FaPhoneAlt /> &nbsp;resume</a></p>
           <div className={styles.imgContainer}>
             <a href="https://github.com/achen2304" target="_blank" rel="noopener noreferrer">
               <img 

@@ -32,12 +32,17 @@ export const Projects = () => {
             {/*Description*/}
             <ul className={styles.description}>
               <li>
-              Created custom schematic and PCB that fully implements the Pi Pico microcontroller to allow for fully 
-              functional keyboard switches, and layout.                
+              Created custom schematic and PCB in KiCad that fully implements 
+              the Pi Pico microcontroller to allow for fully functional keyboard switches.                
               </li>
               <li>
-                Programmed a Pi Pico microcontroller to convert keystrokes into corresponding characters using Python.
-              </li>
+              Hand Soldered diodes, switches, and Raspberry Pi Pico in a appealing way without 
+              compromising functionality.               
+               </li>
+               <li>
+               Developed firmware for Raspberry Pi Pico to convert each keypress into a 
+               corresponding alphabet letter.  
+               </li>
             </ul>
             {/*SKILL SECTION*/}
             <ul className={styles.skillsUsed}>
