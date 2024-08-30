@@ -11,8 +11,8 @@ export const Resume = () => {
       <div className={styles.downloadSection} data-aos="fade-up" data-aos-delay="100">
         <a href={samplePDF} download="resume.pdf" className={styles.downloadLink}>
           <div className={styles.infoContainer}>
-            <h2>June 2024 Resume</h2>
-            <p>resume.pdf</p>
+            <h2>Aug 2024 Resume</h2>
+            <p>download resume.pdf</p>
           </div>
         </a>
       </div>
