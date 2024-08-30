@@ -14,11 +14,10 @@ export const Hero = () => {
           Computer Engineer
         </h2>
         <p className={styles.description} data-aos='fade-right' data-aos-delay='600'>
-          I'm an undergraduate student studying computer engineering at Iowa State University. 
-          I have an interest in many areas in tech, including firmware development, web development, 
-          and hardware design. I'm looking to find an internship that'll help me delevop my skills 
-          in these areas.
-          
+        I am an undergraduate student majoring in Computer Engineering at Iowa State University. My 
+        interests span various areas in tech, including firmware development, web development, and 
+        hardware design. I am seeking an internship that will allow me to further develop my skills 
+        in these fields.
         </p>
         <a href="#contact" className={styles.contactBtn} data-aos='fade-right' data-aos-delay='1000'>
           Get In Touch
