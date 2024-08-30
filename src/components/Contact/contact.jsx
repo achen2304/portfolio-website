@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import styles from './contact.module.css';
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { getImageUrl1 } from '../../utils'; // Assuming getImageUrl1 is defined in your utils
+import { getImageUrl1 } from '../../utils'; 
+import { Link } from 'react-router-dom';
+import { IoIosPaper } from "react-icons/io";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({ Name: '', Email: '', Message: '' });
@@ -44,7 +46,7 @@ export const Contact = () => {
         <div className={styles.info} data-aos='fade-right' data-aos-delay='0'>
           <p className={styles.text}> <IoMail /> &nbsp;achen2304@gmail.com</p>
           <p className={styles.text}> <FaPhoneAlt /> &nbsp;641-808-8022</p>
-          <p className={styles.text}> <a href="/resume"><FaPhoneAlt /> &nbsp;resume</a></p>
+          <p className={styles.text}> <Link to="/resume"> <IoIosPaper /> &nbsp;Resume</Link></p>
           <div className={styles.imgContainer}>
             <a href="https://github.com/achen2304" target="_blank" rel="noopener noreferrer">
               <img 
