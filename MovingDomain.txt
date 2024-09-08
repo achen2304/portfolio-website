@@ -1,0 +1,2 @@
+npx vercel alias https://portfolio-website-achen2304s-projects.vercel.app/ www.caizchen.com
+npx vercel alias (vercel line) (domain link 1 & 2)

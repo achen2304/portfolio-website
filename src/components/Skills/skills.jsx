@@ -34,6 +34,21 @@ export const Skills = () => {
               </div>
               <div className={styles.subtitle}>SolidWorks</div>
             </div>
+
+
+            
+            <div>
+              <div className={styles['img-box']}>
+                <img src={getImageUrl1("skills/google.svg")} alt="Google Suite" />
+              </div>
+              <div className={styles.subtitle}>Google Suite</div>
+            </div>
+            <div>
+              <div className={styles['img-box']}>
+                <img src={getImageUrl1("skills/microsoft.svg")} alt="Mircosoft 365" />
+              </div>
+              <div className={styles.subtitle}>Mircosoft 365</div>
+            </div>
           </div>
           </div>
 
